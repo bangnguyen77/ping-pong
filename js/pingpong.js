@@ -1,3 +1,4 @@
+// back-end logic
 function pingPong(goal) {
   var output = [];
   for (var i = 1; i <= goal; i++) {
@@ -13,15 +14,3 @@ function pingPong(goal) {
   }
   return output;
 }
-
-$(document).ready(function() {
-  $("#ping-pong-form").submit(function(event) {
-    event.preventDefault();
-    // $("ul#solution li").remove(); // remove bullets?
-    var goal = $("#goal").val();
-    var output = pingPong(goal);
-    output.forEach(function(element) {
-      $("#solution").append("<li>" + element + "</li>");
-    });
-  });
-});
