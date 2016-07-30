@@ -4,7 +4,8 @@ $(document).ready(function() {
     event.preventDefault();
     // $("ul#solution li").remove(); // remove bullets?
     var goal = $("#goal").val();
-    var output = pingPong(goal);
+    var simpleCalculator = new Calculator("hot pink");
+    var output = simpleCalculator.pingPong(goal);
     output.forEach(function(element) {
       $("#solution").append("<li>" + element + "</li>");
     });
