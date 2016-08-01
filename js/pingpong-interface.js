@@ -1,4 +1,6 @@
 // user interface logic
+var Calculator = require('./../js/pingpong.js').calculatorModule;
+
 $(document).ready(function() {
   $("#ping-pong-form").submit(function(event) {
     event.preventDefault();
